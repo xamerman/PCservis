@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PCservis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(to right, #000000, #003344);
+      padding: 40px 20px;
+      text-align: center;
+      color: #00aaff;
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin: 0 0 10px;
+    }
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      gap: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    nav a {
+      color: #00aaff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+      color: #00ccff;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border: 1px solid #003344;
+      border-radius: 16px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,170,255,0.15);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0,170,255,0.25);
+    }
+    .card .price {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #00ccff;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+      section {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PCservis</h1>
+    <p>Profesionální sestavy, opravy a optimalizace počítačů</p>
+  </header>
+  <nav>
+    <a href="#sluzby">Služby</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <section id="sluzby">
+    <h2>Naše Služby</h2>
+    <div class="services">
+      <div class="card">
+        <div>Sestava PC</div>
+        <div class="price">od 300 Kč</div>
+      </div>
+      <div class="card">
+        <div>Oprava komponent</div>
+        <div class="price">od 150 Kč</div>
+      </div>
+      <div class="card">
+        <div>Zrychlení PC</div>
+        <div class="price">od 200 Kč</div>
+      </div>
+      <div class="card">
+        <div>Instalace Windows</div>
+        <div class="price">250 Kč</div>
+      </div>
+      <div class="card">
+        <div>Čištění PC</div>
+        <div class="price">150 Kč</div>
+      </div>
+    </div>
+  </section>
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p style="text-align: center;">
+      Email: <strong>pcservis@email.cz</strong><br>
+      Telefon: <strong>+420 123 456 789</strong><br>
+      Instagram: <strong>@pcservis</strong>
+    </p>
+  </section>
+  <footer>
+    &copy; 2025 PCservis – Váš parťák pro počítače 💻
+  </footer>
+</body>
+</html>
